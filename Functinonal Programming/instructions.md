@@ -1,4 +1,5 @@
-Instructions
+# Instructions for Assignment 1
+
 Record a chat about functional programming style, and it's connection with:
 
 Immutable objects.
@@ -11,5 +12,3 @@ Create immutable objects like Chair and Room (no mutators, const fields), and sh
 Use a lambda in the implementation somewhere.
 
 Pick a topic that starts with the same letter as your first or last name.  Some simple example!
-
-Turn in: the chat, your code in C++, and a screen shot of it executing.  You will translate your idea into JS/Py for the next assignment.
