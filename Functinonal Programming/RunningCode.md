@@ -3,3 +3,9 @@ Below I have added screenshots of the code running and producing the correct out
 <img width="1355" alt="IMG_7249" src="https://github.com/user-attachments/assets/20712ab0-98c1-41a9-8ebb-fdc6899bf1fe">
 <img width="1353" alt="IMG_7191" src="https://github.com/user-attachments/assets/9c645635-ce11-4ada-ab5d-5b7c64676b3e">
 <img width="1122" alt="IMG_8559" src="https://github.com/user-attachments/assets/25dd38c0-3b1f-463d-af76-b769fca0c332">
+
+
+//Here are the commands for different tests
+// curl http://localhost:8080/greet/Anthony
+// curl -X POST http://localhost:8080/sortStrings -H "Content-Type: application/json" -d '{"strings":["banana", "apple", "cherry"]}'
+//curl http://localhost:8080/

@@ -57,10 +57,3 @@ object HelloWorldServer {
       .onComplete(_ => system.terminate()) // Terminate the system when done
   }
 }
-
-
-//Here are the commands for different tests
-// curl http://localhost:8080/greet/Anthony
-// curl -X POST http://localhost:8080/sortStrings -H "Content-Type: application/json" -d '{"strings":["banana", "apple", "cherry"]}'
-//curl http://localhost:8080/
- 
