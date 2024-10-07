@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = true, force = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mUpdating ProjectRef(uri("file:/workspaces/languages-aduran/Functinonal%20Programming/project/"), "functinonal-programming-build")...[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating functinonal-programming-build[0m
+[0m[[0m[0minfo[0m] [0m[0mResolved functinonal-programming-build dependencies[0m
+[0m[[0m[0minfo[0m] [0m[0mFetching artifacts of functinonal-programming-build[0m
+[0m[[0m[0minfo[0m] [0m[0mFetched artifacts of functinonal-programming-build[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone updating ProjectRef(uri("file:/workspaces/languages-aduran/Functinonal%20Programming/project/"), "functinonal-programming-build")[0m

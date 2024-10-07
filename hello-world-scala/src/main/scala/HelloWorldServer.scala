@@ -1,13 +1,20 @@
-// src/main/scala/HelloWorldServer.scala
-
 import akka.actor.typed.ActorSystem
 import akka.actor.typed.scaladsl.Behaviors
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.server.Directives._
+import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport._
+import spray.json.DefaultJsonProtocol._
+import spray.json._
 
 import scala.io.StdIn
 
 object HelloWorldServer {
+
+  // Case class to represent the JSON structure
+  case class StringList(strings: List[String])
+
+  // Define the JSON format using Spray JSON
+  implicit val stringListFormat = jsonFormat1(StringList)
 
   def main(args: Array[String]): Unit = {
     // Create an ActorSystem
@@ -16,16 +23,29 @@ object HelloWorldServer {
 
     // Define the route
     val route =
-      path("greet" / Segment) { person =>
-        get {
-          complete(s"Hello, $person!")
+      concat(  // Using concat to properly group multiple routes
+        path("greet" / Segment) { person =>
+          get {
+            complete(s"Hello, $person!")
+          }
+        },
+        pathSingleSlash {
+          get {
+            complete(s"Hello!")
+          }
+        },
+        path("sortStrings") {
+          post {
+            entity(as[StringList]) { stringList =>
+              // Functional programming style: use immutable transformation
+              val sortedStrings = stringList.strings.sorted
+
+              // Return the sorted list as JSON
+              complete(sortedStrings.toJson.prettyPrint)
+            }
+          }
         }
-      } ~
-      pathSingleSlash {
-        get {
-          complete(s"Hello!")
-        }
-      }
+      )
 
     // Start the server
     val bindingFuture = Http().newServerAt("localhost", 8080).bind(route)
