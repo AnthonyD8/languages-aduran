@@ -1,12 +1,10 @@
-document.getElementById('calculator-form').addEventListener('submit', async (event) => {
-    event.preventDefault();
+// This function changes the text of a paragraph when a button is clicked
+function changeText() {
+    const paragraph = document.getElementById("dynamic-text");
+    paragraph.textContent = "You have clicked the button!";
+}
 
-    const formData = new FormData(event.target);
-    const response = await fetch('/calculate', {
-        method: 'POST',
-        body: new URLSearchParams(formData)
-    });
-
-    const result = await response.json();
-    document.getElementById('result').textContent = `Monthly Payment: $${result.monthlyPayment}`;
-});
+// This function changes the background color of the page when called
+function changeBackgroundColor() {
+    document.body.style.backgroundColor = "#f0f8ff";
+}
