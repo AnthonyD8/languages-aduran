@@ -9,7 +9,7 @@ body {
 }
 
 #logo{
-    position: center;
+    position: absolute;
     top: 10x;
     left: 10x;
 }
