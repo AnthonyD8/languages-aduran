@@ -23,7 +23,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #860037; /* Dark red */
+    background-color: #000000; /* Dark red */
     color: white;
     padding: 20px 0 20px 0;  /* Remove left and right padding to avoid logo push */
     text-align: center;
