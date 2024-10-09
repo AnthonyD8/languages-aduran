@@ -10,8 +10,9 @@ body {
 
 #logo {
     position: absolute;
-    top: 10px;  /* Corrected */
-    left: 10px; /* Corrected */
+    top: 0;
+    left: 0;
+    padding: 10px;  /* Adjust padding as needed */
 }
 
 #logo img {
@@ -24,9 +25,9 @@ body {
 header {
     background-color: #860037; /* Dark red */
     color: white;
-    padding: 20px;
+    padding: 20px 0 20px 0;  /* Remove left and right padding to avoid logo push */
     text-align: center;
-    position: relative;  /* Ensure the logo stays inside the header */
+    position: relative;  /* This keeps the logo positioned relative to the header */
 }
 
 /* Main Section Styles */
