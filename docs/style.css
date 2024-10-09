@@ -8,15 +8,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header Styles */
-header {
-    background-color: #860037;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    
-}
-
 #logo{
     position: center;
     top: 10x;
@@ -28,6 +19,17 @@ header {
     height: auto;
     display: block;
 }
+
+/* Header Styles */
+header {
+    background-color: #860037;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+
 
 /* Main Section Styles */
 main {
