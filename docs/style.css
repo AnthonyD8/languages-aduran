@@ -18,9 +18,15 @@ header {
 }
 
 #logo{
-    position: left;
+    position: center;
     top: 10x;
     left: 10x;
+}
+
+#logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Main Section Styles */
